@@ -45,7 +45,7 @@ body {
   position: fixed;
   z-index: 2;
   font-size: 60px;
-  top: 2px;
+  top: 0px;
 }
 
 .fa-github {
@@ -76,6 +76,7 @@ ul {
   z-index: 1;
   min-width: 840px;
   top: 0;
+  font-size: 20px;
 }
 
 li {
@@ -123,7 +124,7 @@ h1 {
 .main {
   height: 290px;
   width: 390px;
-  top: 43px;
+  top: 47px;
   border-width: 2px;
   border-style: solid;
   padding: 280px 30px 20px 30px;

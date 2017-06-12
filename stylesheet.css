@@ -1,10 +1,12 @@
 html {
   height: 100%;
+  min-width: 1000px;
+  min-height: 700px;
 }
 
 body {
-  background-image: url("US_night.JPG");
-  background-size: 100%;
+  background-image: url("US_night.jpg");
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   color: white;
   margin: 0;
@@ -51,8 +53,6 @@ body {
 
 .fa-linkedin {
   background: #007bb5;
-  /*background-size: 50px;*/
-  /*padding: 10px;*/
   color: white;
   margin-left: 370px;
   margin-top: 7px;
@@ -73,7 +73,6 @@ ul {
   z-index: 1;
   min-width: 840px;
   top: 0;
-  /*font-size: 18px;*/
 }
 
 li {

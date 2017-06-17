@@ -1,4 +1,9 @@
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
   background-image: url("US_night.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;

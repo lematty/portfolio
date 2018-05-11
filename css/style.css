@@ -27,6 +27,8 @@
 #about-me {
     background-color: #1f2833;
     color: #45a29e;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 #contact {
@@ -39,6 +41,11 @@
     background-color: #1f2833;
     color: #45a29e;
     padding: 3em 0;
+}
+
+.icon-link {
+    color: #45a29e;
+    padding: 0.25em;
 }
 
 #foot {

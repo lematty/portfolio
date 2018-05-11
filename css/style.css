@@ -31,6 +31,10 @@
     padding-right: 5%;
 }
 
+#projects {
+    border-top: #212529 0.5em solid ;
+}
+
 #contact {
     border-top: #212529 0.5em solid ;
     background-color: #c5c6c7;

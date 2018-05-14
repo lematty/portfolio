@@ -1,5 +1,6 @@
 .section-div {
     padding: 15% 0;
+    border-top: #212529 0.5em solid ;
 }
 
 .section-title {
@@ -31,12 +32,12 @@
     padding-right: 5%;
 }
 
-#projects {
-    border-top: #212529 0.5em solid ;
+#test {
+    height: 219.984px;
+    width: 289.984px;
 }
 
 #contact {
-    border-top: #212529 0.5em solid ;
     background-color: #c5c6c7;
     color: #1f2833;
 }

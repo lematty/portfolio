@@ -15,6 +15,9 @@
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif" rel="stylesheet">
     <!--Favicon-->
     <link rel="icon" type="image/png" href="img/Earth.png">
+    <!--AJAX-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 </head>
 <body>
 
@@ -61,43 +64,153 @@
 
                 <!--Img Group-->
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                    <a href="#" class="d-block mb-4 h-100">
-                        <img class="img-fluid img-thumbnail" id="test" src="img/portfolio/Earthquake-viz-400x300.png"
+                    <a href="#" class="d-block mb-4 h-100" data-toggle="modal" data-target="#earthquake-viz">
+                        <img class="img-fluid img-thumbnail" src="img/portfolio/Earthquake-viz-400x300.png"
                              alt="Earthquake Visualisation">
                         <p class="text-center">Earthquake Visualization</p>
                     </a>
 
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                    <a href="#" class="d-block mb-4 h-100">
+                    <a href="#" class="d-block mb-4 h-100" data-toggle="modal" data-target="#transitStops">
                         <img class="img-fluid img-thumbnail" src="img/portfolio/Transit_stops.jpg"
                              alt="NYC Transit Stops">
                         <p class="text-center">NYC Area Transit Stops</p>
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                    <a href="#" class="d-block mb-4 h-100">
+                    <a href="#" class="d-block mb-4 h-100" data-toggle="modal" data-target="#countyMap">
                         <img class="img-fluid img-thumbnail" src="img/portfolio/CountyMap-400x300.png" alt="County Map">
                         <p class="text-center">Map of Union County, NJ, USA</p>
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                    <a href="#" class="d-block mb-4 h-100">
+                    <a href="#" class="d-block mb-4 h-100" data-toggle="modal" data-target="#manhattanMap">
                         <img class="img-fluid img-thumbnail" src="img/portfolio/Manhattan-400x300.png" alt="Manhattan Map">
                         <p class="text-center">Manhattan Buildings by Height</p>
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                    <a href="#" class="d-block mb-4 h-100">
+                    <a href="#" class="d-block mb-4 h-100" data-toggle="modal" data-target="#lindenMap">
                         <img class="img-fluid img-thumbnail" src="img/portfolio/Linden-400x300.jpg" alt="Linden Map">
                         <p class="text-center">Linden, NJ, USA</p>
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                    <a href="#" class="d-block mb-4 h-100">
+                    <a href="#" class="d-block mb-4 h-100" data-toggle="modal" data-target="#placeHolder">
                         <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
                         <p class="text-center">Coming Soon..</p>
                     </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="earthquake-viz" tabindex="-1" role="dialog" aria-labelledby="earthquakeTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="earthquakeTitle">Project 1</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/portfolio/Earthquake-viz.png" alt="" style="width: 100%;">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="transitStops" tabindex="-1" role="dialog" aria-labelledby="transitStopsTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="transitStopsTitle">Project 2</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/portfolio/Transit_stops.jpg" alt="" style="width: 100%;">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="countyMap" tabindex="-1" role="dialog" aria-labelledby="countyMapTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="countyMapTitle">Project 3</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/portfolio/CountyMap.png" alt="" style="width: 100%;">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="manhattanMap" tabindex="-1" role="dialog" aria-labelledby="manhattanMapTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="manhattanMapTitle">Project 4</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/portfolio/Manhattan.png" alt="" style="width: 100%;">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="lindenMap" tabindex="-1" role="dialog" aria-labelledby="lindenMapTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="lindenMapTitle">Project 5</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/portfolio/Linden.jpg" alt="" style="width: 100%;">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="placeHolder" tabindex="-1" role="dialog" aria-labelledby="placeHolderTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="placeHolderTitle">Project 6</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="http://placehold.it/400x300" alt="" style="width: 100%;">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
             </div>
         </div>

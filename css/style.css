@@ -32,8 +32,19 @@
     padding-right: 5%;
 }
 
-#btn-div {
+#button-div {
     margin-top: 15%;
+}
+
+.btn.btn-cv {
+    color: #45a29d;
+    background-color: #1f2833;
+    border-color: #45a29d #45a29d #45a29d;
+}
+.btn.btn-cv:hover {
+    color: #1f2833;
+    background-image: linear-gradient(to bottom, #45a29d, #45a29d);
+    border-color: #45a29d #45a29d #45a29d;
 }
 
 #contact {

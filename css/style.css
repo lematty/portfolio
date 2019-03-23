@@ -7,9 +7,19 @@ a {
   color: inherit;
 }
 
+a:hover {
+  color: black;
+  text-decoration:none;
+  cursor:pointer;
+}
 
-.navbar, .btn, .row .landing-text {
+.navbar, .row .landing-text {
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.btn-nav:hover, .btn-nav:focus, .btn-nav:active, .btn-nav.active, .open>.dropdown-toggle.btn-nav {
+  color: #f8f9fa !important;
+  border-color: #f8f9fa;
 }
 
 .row .inner-landing-text{
@@ -29,4 +39,8 @@ a {
 
 .skillset-col {
   white-space: nowrap;
+}
+
+.main-card {
+  margin-bottom: 15px;
 }

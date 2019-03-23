@@ -30,21 +30,22 @@ a:hover {
 
 .down-arrow-row {
   position: absolute;
-  top: 80vh;
+  bottom: 15vh;
   margin: auto;
 }
 
 .arrow {
-  box-sizing: border-box;
+  -webkit-animation: arrowbounce 1s linear infinite;
+  -moz-animation:    arrowbounce 1s linear infinite;
+  -o-animation:      arrowbounce 1s linear infinite;
+  animation:         arrowbounce 1s linear infinite;
+  position: relative;
   height: 5vw;
   width: 5vw;
   border-style: solid;
   border-color: white;
   border-width: 0px 1px 1px 0px;
   transform: rotate(45deg);
-  transition: border-width 150ms ease-in-out;
-  animation: arrowbounce 2s infinite;
-  background-clip:content-box;
 }
 
 .arrow:hover {
@@ -53,9 +54,8 @@ a:hover {
 }
 
 @keyframes arrowbounce {
-  0% { top: 0px }
+  0%, 100% { top: 0px }
   50% { top: 20px }
-  100% { top: 0px }
 }
 
 /* #home {

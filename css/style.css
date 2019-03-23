@@ -13,8 +13,8 @@ a:hover {
   cursor:pointer;
 }
 
-.navbar, .row .landing-text {
-  background-color: rgba(0, 0, 0, 0.5);
+.navbar {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .btn-nav:hover, .btn-nav:focus, .btn-nav:active, .btn-nav.active, .open>.dropdown-toggle.btn-nav {
@@ -22,8 +22,40 @@ a:hover {
   border-color: #f8f9fa;
 }
 
-.row .inner-landing-text{
-  background: rgba(0, 0, 0, 0.5);
+.landing-text {
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+}
+
+.down-arrow-row {
+  position: absolute;
+  top: 80vh;
+  margin: auto;
+}
+
+.arrow {
+  box-sizing: border-box;
+  height: 5vw;
+  width: 5vw;
+  border-style: solid;
+  border-color: white;
+  border-width: 0px 1px 1px 0px;
+  transform: rotate(45deg);
+  transition: border-width 150ms ease-in-out;
+  animation: arrowbounce 2s infinite;
+  background-clip:content-box;
+}
+
+.arrow:hover {
+  border-bottom-width: 4px;
+  border-right-width: 4px;
+}
+
+@keyframes arrowbounce {
+  0% { top: 0px }
+  50% { top: 20px }
+  100% { top: 0px }
 }
 
 /* #home {

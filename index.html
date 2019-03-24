@@ -48,9 +48,8 @@
     </nav> -->
 
     <!-- New navbar -->
-    <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <div class="overlay-content">
+    <div id="menu" class="overlay fixed-top">
+      <div class="overlay-content text-center">
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
@@ -61,7 +60,7 @@
 
     <nav class="navbar navbar-expand justify-content-end fixed-top">
       <div>
-        <span class="nav-icon" onclick="openNav()">&#9776;</span>
+        <span class="nav-icon" onclick="toggleMenu()">&#9776;</span>
       </div>
     </nav>
 
@@ -311,7 +310,7 @@
             <p>New Jersey, USA</p>
           </div>
           <div class="col-sm-4 my-auto">
-            <a href="#resume" class="btn btn-outline-light btn-lg">Resume</a>
+            <a href="#resume" class="btn btn-outline-light btn-lg m-5">Resume</a>
           </div>
           <div class="col-sm-4">
             <h3>Connect</h3>

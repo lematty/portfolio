@@ -88,9 +88,10 @@ a:hover {
 .form-control:focus {
   background: #343a40;
   color: white;
-  border-top: 0;
   border-bottom: 4px solid white;
-  border-left: 0;
-  border-right: 0;
   box-shadow: none;
+}
+
+.alert {
+  display: none;
 }

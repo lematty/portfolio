@@ -97,11 +97,6 @@ a:hover {
   transition: 0.5s;
 }
 
-.overlay-content {
-  position: relative;
-  top: 25%;
-}
-
 .overlay a {
   padding: 8px;
   text-decoration: none;

@@ -76,3 +76,21 @@ a:hover {
 .main-card {
   margin-bottom: 15px;
 }
+
+.form-control {
+  background: transparent;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+.form-control:focus {
+  background: #343a40;
+  color: white;
+  border-top: 0;
+  border-bottom: 4px solid white;
+  border-left: 0;
+  border-right: 0;
+  box-shadow: none;
+}

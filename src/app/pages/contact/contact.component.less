@@ -1,0 +1,58 @@
+@import '~src/styles/colors';
+
+.contact {
+  flex-direction: column;
+
+  .locations {
+    flex-direction: column;
+    align-items: center;
+
+    .location-title{
+      padding: 20px;
+    }
+
+    .cities-container {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 20px;
+
+      .city {
+        padding: 10px;
+        cursor: pointer;
+      }
+
+      .city:hover {
+        color: @color-secondary-2-2;
+      }
+    }
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+}
+
+.connect {
+  .text {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+
+    .icons {
+      padding: 20px;
+      .icon {
+        padding: 10px;
+        color: inherit;
+        cursor: pointer;
+      }
+
+      .icon:hover {
+        color: @color-secondary-2-2;
+      }
+    }
+  }
+}
+

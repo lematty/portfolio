@@ -1,50 +1,27 @@
-# Portfolio Website
+# Portfolio
 
-This is a personal website I use to showcase my work.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
 
-## Getting Started
+## Development server
 
-These instructions will get you a copy of the project up and running on your local machine.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-### Prerequisites
+## Code scaffolding
 
-To run this project you will need npm and live-server.
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-Check if node and npm is installed:
+## Build
 
-```
-$ node -v
-$ npm -v
-```
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-If you need to install node and npm go to: https://nodejs.org/en/download/
+## Running unit tests
 
-Once node and npm is installed, install live-server:
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-```
-$ npm install -g live-server
-```
+## Running end-to-end tests
 
-### Installing
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-Clone repository and go to it's directory:
+## Further help
 
-```
-$ git clone https://github.com/lematty/portfolio.git
-$ cd portfolio
-```
-
-To start server run live-server in the colsole:
-
-```
-$ live-server
-```
-
-## Built With
-
-* [Bootstrap 4](https://getbootstrap.com/) - The web framework used
-* [particles.js](https://github.com/VincentGarreau/particles.js/) - Particle generator library
-
-## Acknowledgments
-
-* Shout out to those who inspired me with ideas for particle.js
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

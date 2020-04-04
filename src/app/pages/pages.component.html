@@ -1,5 +1,5 @@
 <div id="pages">
-  <app-home *ngIf="activePage === Page.Home"></app-home>
+  <app-home *ngIf="activePage === Page.Home && hasHomePage"></app-home>
   <app-about *ngIf="activePage === Page.About"></app-about>
   <app-projects *ngIf="activePage === Page.Projects"></app-projects>
   <app-contact *ngIf="activePage === Page.Contact"></app-contact>

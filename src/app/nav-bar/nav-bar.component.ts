@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Page } from '../models';
+import { FeatureFlagService } from '../services';
 
 @Component({
   selector: 'app-nav-bar',
@@ -12,7 +13,11 @@ export class NavBarComponent implements OnInit {
 
   Page = Page;
 
-  constructor() { }
+  hasHomePage = false;
+
+  constructor(private featureFlagService: FeatureFlagService) {
+    this.hasHomePage = this.featureFlagService.getFeatureFlag('hasHomePage');
+  }
 
   ngOnInit(): void {
   }

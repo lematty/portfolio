@@ -5,8 +5,8 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item" [ngClass]="{ 'active': activePage === Page.Home }">
+    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+      <li *ngIf="hasHomePage" class="nav-item" [ngClass]="{ 'active': activePage === Page.Home }">
         <a class="nav-link" href="#" (click)="changePage(Page.Home)">
           <span class="py-2" [ngClass]="{ 'underline': activePage === Page.Home }">Home</span>
         </a>

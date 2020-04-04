@@ -7,7 +7,7 @@ import { Page } from './models';
   styleUrls: ['./app.component.less']
 })
 export class AppComponent {
-  activePage: Page = Page.Home;
+  activePage: Page = Page.About;
 
   changePage(page: Page) {
     this.activePage = page;

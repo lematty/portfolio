@@ -1,11 +1,11 @@
 export class FeatureFlagService {
-  featureFlags = {
+  FEATURE_FLAGS = {
     hasContactMap: false,
     hasHomePage: false,
     hasSkillsMill: false,
   };
 
   getFeatureFlag(flag: string): boolean {
-    return this.featureFlags[flag];
+    return this.FEATURE_FLAGS[flag];
   }
 }

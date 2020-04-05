@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { FeatureFlagService } from '../../services/feature-flag.service';
 
 @Component({
   selector: 'app-contact',
@@ -9,8 +10,11 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 export class ContactComponent implements OnInit {
   faGithub = faGithub;
   faLinkedin = faLinkedin;
+  hasContactMap = false;
 
-  constructor() { }
+  constructor(private featureFlagService: FeatureFlagService) {
+    this.hasContactMap = this.featureFlagService.getFeatureFlag('hasContactMap');
+  }
 
   ngOnInit(): void {
   }

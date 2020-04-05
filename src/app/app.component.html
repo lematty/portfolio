@@ -1,2 +1,8 @@
-<app-nav-bar [activePage]="activePage" (pageChange)="changePage($event)"></app-nav-bar>
-<app-pages [activePage]="activePage"></app-pages>
+<div class="app-container h-100">
+  <div class="nav-bar">
+    <app-nav-bar [activePage]="activePage" (pageChange)="changePage($event)"></app-nav-bar>
+  </div>
+  <div class="pages">
+    <app-pages [activePage]="activePage"></app-pages>
+  </div>
+</div>

@@ -1,28 +1,28 @@
-<nav class="navbar navbar-expand-sm">
+<nav class="navbar navbar-expand-sm navbar-dark">
   <a class="navbar-brand" href="#">&#123; lematty &#125;</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" (click)="toggleNavbar()" data-toggle="collapse" data-target="#dropdownMenu" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+  <div class="collapse navbar-collapse" aria-labelledby="dropdownMenu">
     <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
       <li *ngIf="hasHomePage" class="nav-item" [ngClass]="{ 'active': activePage === Page.Home }">
-        <a class="nav-link" href="#" (click)="changePage(Page.Home)">
+        <a class="nav-link" href="#home" (click)="changePage(Page.Home)">
           <span class="py-2" [ngClass]="{ 'underline': activePage === Page.Home }">Home</span>
         </a>
       </li>
       <li class="nav-item" [ngClass]="{ 'active': activePage === Page.About }">
-        <a class="nav-link" href="#" (click)="changePage(Page.About)">
+        <a class="nav-link" href="#about" (click)="changePage(Page.About)">
           <span class="py-2" [ngClass]="{ 'underline': activePage === Page.About }">About</span>
         </a>
       </li>
       <li class="nav-item" [ngClass]="{ 'active': activePage === Page.Projects }">
-        <a class="nav-link" href="#" (click)="changePage(Page.Projects)">
+        <a class="nav-link" href="#projects" (click)="changePage(Page.Projects)">
           <span class="py-2" [ngClass]="{ 'underline': activePage === Page.Projects }">Projects</span>
         </a>
       </li>
       <li class="nav-item" [ngClass]="{ 'active': activePage === Page.Contact }">
-        <a class="nav-link" href="#" (click)="changePage(Page.Contact)">
+        <a class="nav-link" href="#contact" (click)="changePage(Page.Contact)">
           <span class="py-2" [ngClass]="{ 'underline': activePage === Page.Contact }">Contact</span>
         </a>
       </li>

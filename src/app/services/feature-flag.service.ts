@@ -1,7 +1,6 @@
 export class FeatureFlagService {
   FEATURE_FLAGS = {
     hasContactMap: false,
-    hasHomePage: false,
     hasSkillsMill: false,
   };
 

@@ -20,15 +20,18 @@ export class NavBarComponent implements OnInit {
     this.hasHomePage = this.featureFlagService.getFeatureFlag('hasHomePage');
   }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   toggleNavbar(): void {
     this.isNavbarOpen = !this.isNavbarOpen;
   }
 
-  changePage(page: Page): void {
-    this.pageChange.emit(page);
+  closeNavbar() {
+    this.isNavbarOpen = false;
   }
 
+  changePage(page: Page): void {
+    this.pageChange.emit(page);
+    this.closeNavbar();
+  }
 }

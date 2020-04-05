@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { AboutComponent, ContactComponent, HomeComponent, PagesComponent, ProjectsComponent } from './pages';
 import { FeatureFlagService } from './services';
+import { ClickOutsideDirective } from '../directives/click-outside.directive';
 
 @NgModule({
   declarations: [
     AboutComponent,
     AppComponent,
+    ClickOutsideDirective,
     ContactComponent,
     HomeComponent,
     NavBarComponent,

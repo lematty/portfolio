@@ -1,10 +1,17 @@
-<nav class="navbar navbar-expand-sm navbar-dark">
+<nav class="navbar navbar-expand-sm navbar-dark" (clickoutside)="closeNavbar()">
   <a class="navbar-brand" href="#">&#123; lematty &#125;</a>
-  <button class="navbar-toggler" type="button" (click)="toggleNavbar()" data-toggle="collapse" data-target="#dropdownMenu" aria-expanded="false" aria-label="Toggle navigation">
+  <button
+    class="navbar-toggler"
+    type="button"
+    (click)="toggleNavbar()"
+    data-toggle="collapse"
+    data-target="#dropdownMenu"
+    aria-expanded="false"
+    >
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" aria-labelledby="dropdownMenu">
+  <div class="collapse navbar-collapse" aria-labelledby="dropdownMenu" [ngClass]="{ 'show': isNavbarOpen }">
     <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
       <li *ngIf="hasHomePage" class="nav-item" [ngClass]="{ 'active': activePage === Page.Home }">
         <a class="nav-link" href="#home" (click)="changePage(Page.Home)">

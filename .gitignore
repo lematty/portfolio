@@ -40,3 +40,8 @@ Thumbs.db
 
 # Environment
 environments
+
+# Deployments
+.firebase/
+.firebaserc
+

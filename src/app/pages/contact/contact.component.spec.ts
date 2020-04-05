@@ -2,6 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ContactComponent } from './contact.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FeatureFlagService } from '../../services';
 
 describe('ContactComponent', () => {
   let component: ContactComponent;
@@ -10,6 +11,7 @@ describe('ContactComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ ContactComponent ],
+      providers: [ FeatureFlagService ],
       imports: [ FontAwesomeModule ]
     })
     .compileComponents();

@@ -14,22 +14,22 @@
     <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
       <li class="nav-item" [ngClass]="{ 'active': activePage === Page.Home }">
         <a class="nav-link" (click)="changePage(Page.Home)">
-          <span class="py-2" [ngClass]="{ 'underline': activePage === Page.Home }">Home</span>
+          <span class="py-2 nav-item-text" [ngClass]="{ 'underline': activePage === Page.Home }">Home</span>
         </a>
       </li>
       <li class="nav-item" [ngClass]="{ 'active': activePage === Page.About }">
         <a class="nav-link" (click)="changePage(Page.About)">
-          <span class="py-2" [ngClass]="{ 'underline': activePage === Page.About }">About</span>
+          <span class="py-2 nav-item-text" [ngClass]="{ 'underline': activePage === Page.About }">About</span>
         </a>
       </li>
       <li class="nav-item" [ngClass]="{ 'active': activePage === Page.Projects }">
         <a class="nav-link" (click)="changePage(Page.Projects)">
-          <span class="py-2" [ngClass]="{ 'underline': activePage === Page.Projects }">Projects</span>
+          <span class="py-2 nav-item-text" [ngClass]="{ 'underline': activePage === Page.Projects }">Projects</span>
         </a>
       </li>
       <li class="nav-item" [ngClass]="{ 'active': activePage === Page.Contact }">
         <a class="nav-link" (click)="changePage(Page.Contact)">
-          <span class="py-2" [ngClass]="{ 'underline': activePage === Page.Contact }">Contact</span>
+          <span class="py-2 nav-item-text" [ngClass]="{ 'underline': activePage === Page.Contact }">Contact</span>
         </a>
       </li>
     </ul>

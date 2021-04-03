@@ -12,33 +12,33 @@ jobs:
                 name: Versions
                 command: |
                     echo "Node version: $(node --version)"
-                    echo "NPM version: $(npm --version)"
+                    echo "NPM version: $(yarn --version)"
             - restore_cache:
                 keys:
-                    - v1-dependencies-{{ checksum "package-lock.json" }}
+                    - v1-dependencies-{{ checksum "yarn.lock" }}
                     - v1-dependencies-
             - run:
                 name: Install local dependencies
-                command: npm install
+                command: yarn install
             - save_cache:
-                key: v1-dependencies-{{ checksum "package-lock.json" }}
+                key: v1-dependencies-{{ checksum "yarn.lock" }}
                 paths:
                     - node_modules
             - run:
                 name: Linting
-                command: npm run lint
+                command: yarn run lint
             - run:
                 name: Unit test
-                command: npm run test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
+                command: yarn run test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
             # - run:
             #     name: End to End Test
-            #     command: npm run e2e -- --protractor-config=e2e/protractor-ci.conf.js
+            #     command: yarn run e2e -- --protractor-config=e2e/protractor-ci.conf.js
 
             - run:
                 name: Production build
-                command: npm run build-prod
+                command: yarn run build-prod
             - save_cache:
-                key: v1-dependencies-{{ checksum "package-lock.json" }}
+                key: v1-dependencies-{{ checksum "yarn.lock" }}
                 paths:
                     - dist
                     - package.json
@@ -55,11 +55,11 @@ jobs:
                 command: echo 'Deploying to Firebase!!'
             - restore_cache:
                 keys:
-                    - v1-dependencies-{{ checksum "package-lock.json" }}
+                    - v1-dependencies-{{ checksum "yarn.lock" }}
                     - v1-dependencies-
             - run:
                 name: Building production version
-                command: npm run build-prod
+                command: yarn run build-prod
             - run:
                 name: Firebase Deploy
                 command: ./node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN" --only hosting
